@@ -134,7 +134,7 @@ function manejarRespuestaCorrecta(desafio) {
 function manejarRespuestaIncorrecta() {
     elementoMensajeFeedback.textContent = "¡ojo! Le erraste en algo. Fijate bien y probá de nuevo.";
     elementoMensajeFeedback.style.color = '#F87171'; // rojo
-    elementoEntradaUsuario.classList.add('shake'); // Para que tiemble
+    elementoEntradaUsuario.classList.add('shake'); // para que tiemble
 }
 
 /**
