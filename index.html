@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-hecho en pinamar, con el mate al lado->
+<html lang="es-UY">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío HTML: Terror en el Código</title>
+    
+    <!-unas fuentes para que quede más prolijo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!- enlace a los estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="contenedor">
+      <header>
+            <h1 class="titulo">Terror en el Código</h1>
+            <p class="subtitulo">El código se fue al pasto. Tu trabajo es arreglar las etiquetas HTML para que todo vuelva a la vieja normalidad.</p>
+       </header>
+      <!-la barrita que muestra cuánto vas arreglando -->
+      <div class="seccion-progreso">
+          <label for="barra-progreso">Arreglando lo que está mal:</label>
+          <progress id="barra-progreso" value="0" max="100"></progress>
+      </div>
+
+        <!-acá es donde pasa la acción -->
+        <div id="contenedor-desafio" class="caja-desafio">
+          <h2 id="titulo-desafio"></h2>
+          <p id="descripcion-desafio"></p>
+            
+            <!-el código que está mal -->
+            <div class="caja-codigo-roto">
+              <code>&lt;!-- CÓDIGO HECHO BOLSA --&gt;</code><br>
+              <code id="codigo-roto"></code>
+            </div>
+            
+            <!--el lugar para que metas mano vos -->
+           <div class="seccion-entrada">
+              <label for="entrada-usuario">Código arreglado acá:</label>
+               <input type="text" id="entrada-usuario" placeholder="<etiqueta>acá va la magia</etiqueta>">
+            </div>
+          <button id="boton-verificar">Probar a ver qué pasa</button>
+          
+          <!-mensajes para ver si quedó o no -->
+          <p id="mensaje-feedback"></p>
+      </div>
+
+       <!-las medallas que vas ganando -->
+      <div class="seccion-medallas">
+           <h3>Las chapas que te ganaste</h3>
+           <div id="contenedor-medallas">
+               <p class="texto-sin-medallas">Todavía estás en el horno, ¡metele a las misiones!</p>
+          </div>
+      </div>
+        
+       <footer>
+           <p>Hecho por A.Franchi - Licencia Creative Commons CC BY-SA 4.0.</p>
+      </footer>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
