@@ -37,7 +37,7 @@ const desafios = [
      {
         id: 4,
         title: "Desafío 4: El enlace roto",
-        description: "Los enlaces se hacen con la etiqueta 'a' y el atributo 'href="www.ejemplo.com"'. Dejá este enlace como nuevo.",
+        description: "Los enlaces se hacen con la etiqueta 'a' y el atributo 'href=\"www.ejemplo.com\"'. Dejá este enlace como nuevo.",
         brokenCode: '... Ir a la Base de Datos ...',
         correctAnswer: '<a href="www.ejemplo.com">Ir a la Base de Datos</a>',
         badge: '🔗 Uniendo Cables',
@@ -45,7 +45,7 @@ const desafios = [
     }
 ];
 
-// ---ARIABLES PARA LLEVAR LA CUENTA--
+// ---VARIABLES PARA LLEVAR LA CUENTA--
 let desafioActual = 0;
 let desafiosCompletados = 0;
 
