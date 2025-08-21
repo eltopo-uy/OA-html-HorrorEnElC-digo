@@ -76,7 +76,7 @@ function cargarDesafio(indice) {
 }
 
 /**
- * Se fija si lo que escribiste está bien o si mandaste cualquiera.
+ * se fija si lo que escribiste está bien o si mandaste cualquiera.
  */
 function verificarRespuesta() {
     const desafio = desafios[desafioActual];
@@ -112,7 +112,7 @@ function manejarRespuestaCorrecta(desafio) {
     actualizarProgreso();
     agregarChapa(desafio.badge);
 
-    // Bloqueamos el botón para que no le de mil veces
+    // bloqueamos el botón para que no le de mil veces
     botonVerificar.disabled = true;
 
     // esperamos un cachito y pasamos al siguiente
