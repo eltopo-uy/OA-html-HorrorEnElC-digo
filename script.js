@@ -23,7 +23,7 @@ const desafios = [
         title: "Desafío 3: La imagen perdida",
         description: "Para mostrar una imagen, se usa la etiqueta img con el atributo src. ¡Meté la imagen que falta!",
         brokenCode: '... imagen.png ...',
-        // Aceptamos varias respuestas porque somos cracks
+        // aceptamos varias respuestas porque somos cracks
         correctAnswer: [ 
             '<img src="imagen.png">',
             '<img src="imagen.png"/>',
@@ -37,9 +37,9 @@ const desafios = [
      {
         id: 4,
         title: "Desafío 4: El enlace roto",
-        description: "Los enlaces se hacen con la etiqueta 'a' y el atributo 'href'. Dejá este enlace como nuevo.",
+        description: "Los enlaces se hacen con la etiqueta 'a' y el atributo 'href="www.ejemplo.com"'. Dejá este enlace como nuevo.",
         brokenCode: '... Ir a la Base de Datos ...',
-        correctAnswer: '<a href="#">Ir a la Base de Datos</a>',
+        correctAnswer: '<a href="www.ejemplo.com">Ir a la Base de Datos</a>',
         badge: '🔗 Uniendo Cables',
         isCompleted: false
     }
